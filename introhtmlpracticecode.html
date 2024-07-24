@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en-US">
+<!-- understandably this sets the language, but you can also set subsections of your document to be recognized as different languages. This is thus useful in many ways. Your HTML document will be idnexed more effectively by search engines when the langauge is set and it is useful to people with visual impairments using screen readers (for example the word "six" exists in both french and english but is pronounced differently -->
+  <head>
+        <meta charset="utf-8" />
+        <meta name = "author" content = "Pee pee poo poo" />
+	<meta
+             name = "description"
+	     content = "IU is the goat, she's a goated singer and goated actress, she's literally my waifu"
+	/>
+<!-- description content is the key words that makes your website easier to find -->
+	<meta
+	     property = "og:image"
+	     content = https://hashtaglegend.com/wp-content/uploads/2021/01/IU-1-1024x1024.jpeg />
+	<meta
+	     property = "og: description"
+	     content = "IU is goat I love iu" />
+	<meta property = "og:title" content = "Mozilla Developer Network" />
+	<link rel = "icon" href = "Lilac.jpeg" type = "image/x-icon" />
+<!-- im not entirely sure if this works so ill still have to test this in the future -->
+    <title>My test page</title>
+  </head>
+  <body>
+<!--    <p>Japanese example: ご飯が熱い。</p> -->
+    <h1>Why IU is the goat</h1>
+    <img
+        src = "https://lh3.googleusercontent.com/nKZMlsGNyzM6LXpOs4AMPVFnjez303sIVFsFTgsb4h-LIsOLxtoO9qRMjwhEEEai6EttLF52h2ZCOfFn5gwPyhfLhqREYynyZMcQY3uN_7m5cWBH=w1200-h630-rj-pp-e365"
+        alt = "IU from Hotel de Luna"
+        height = 420
+        width = 420
+    />
+   <p> Do you agree? Type yes or no <br></br>   
+   </p>
+   <input type = "text" />
+   <br> </br>
+   <a href="https://www.youtube.com/playlist?list=PLiyHrD1Lz34wcSymius16creHGwjfCeQS" title="&quot;https://www.youtube.com/playlist?list=PLiyHrD1Lz34wcSymius16creHGwjfCeQS&quot;">Here are just some banger IU songs to prove my point</a>
+    <p id="noWhitespace">I love MAMAMOO</p>
+
+    <p id="whitespace">I
+        Love
+        Mamamoo.</p>   
+<!-- AHHH COMMENTS I LOVE COMMENTS -->
+<!-- Btw the whitespace requires javascript code so uhhh just skip and forget about that for now cuz you need the following lines of code -->
+<!-- const noWhitespace = document.getElementById("noWhitespace").innerHTML; //next line// console.log(noWhitespace);-->
+<!-- const whitespace = document.getElementById("whitespace").innerHTML; //next line // console.log(whitespace); -->
+    <p> Here are some songs by IU  </p>
+    <ol>
+	<li><em>lilac</em></li>
+	<li><strong>celebrity</strong></li>
+	<li><u>into the iu land </u></li>
+	<li>coin </li>
+    </ol>
+<!-- ul can be used for unordered list so like point form bullet points -->
+    <h2> Mamamoo also goat though but im not coding that lol 2</h2>
+    <p>s
+       Instead, I will link you to the Mamamoo website
+       <a href="https://kprofiles.com/mamamoo-members-profile/"> Mamamoo Kpop Profile</a>.
+    </p>
+    <a href = "https://kprofiles.com/mamamoo-members-profile/"> 
+	<h1> MAMAMOO </h1>
+    </a>
+    <a href = "https://kprofiles.com/mamamoo-members-profile/"
+       title = "Mamamoo goatttt vocalists appreciation"
+    >
+    <img src = "https://s.yimg.com/zb/imgv1/c5298bf0-4eff-3928-bf92-3d38d9324eb4/t_500x300" alt = "MAMAMOO" />
+    </a>
+
+    <!-- sending a email template -->
+    <p>
+    <a href="mailto:nowhere@mozilla.org">Send email to nowhere</a> <br></br>
+    <a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">
+  Send mail with cc, bcc, subject and body  
+    </a>
+    </p> 
+    <!--The values of each field must be URL-encoded with non-printing characters (invisible characters like tabs, carriage returns, and page breaks_ and spaces  percent-escaped. also, note the use of the question mark to separate the main URL from the field values, and ampersands to separate each field in the mailto: URL. This is standard URL query notation. -->
+    <!-- in fact the email address is optional. If you omit it and your href is mailto: a new outgoing email window will be opened by the user's email client with no desitnation address. Thi sis often useful as "Share" links that users can click to send an email to an adress of their choosing.-->
+<!-- examples of linking good practices, whenever ur linking be efficient and clear and warn about things users should know such as how big a file is for instance -->
+<!-- also for the download file, so the first link, it can be useful to use the download attribute to provide a default save filename -->    
+<a
+  href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US"
+  download="firefox-latest-64bit-installer.exe">
+  Download Latest Firefox for Windows (64-bit) (English, US)
+    </a> <br></br> 
+  <a href="https://www.example.com/video-stream/" target="_blank">
+    Watch the video (stream opens in separate tab, HD quality)
+  </a>
+<!-- absolute urls points to a location defined by its absoltue location on the web, including protocol and odmain name. for example https://www.example.com/projects/index.html or even just https://www.example.com/projects/ as most web servers just look for a landing page such as index.thml to load if it isnt specificed in the URL. thus for example if an index.html page is uploaded to a directory called projects that sits inside the root of a web server, and the website's domain is https://www.example.com, the page would be available at https://www.example.com/projects/index.html.  on the other hand, a relative url points to a location that is relative to the file you are linking from, more like what we looked in the previous section. for example for our previous url the url would just be the filename project-brief.pdf for instance and if it was aviable in a subdirectory inside projects called pdfs then it would just be pdfs/project-brief.pdf a relative pdf would point to diff places depending on actual location of the file cuz for eg we could move the index.html file out of the projects direcotry and into the root of the website the top level not in any directories and the link will be https://www.example.com/pdfs/project-brief.pdf instead of https://www.example.com/projects/pdfs/project-brief.pdf. Thus website domains and stuff are essentially of the same mechanics of the html folders we practice with just with a domain and server to actually host the website to be found on the browser -->
+    <d1>
+        <dt>a</dt>
+        <dd>
+           first letter of the alphabet
+        </dd>
+        <dd>
+           Also used to indicate a singular object
+        </dd>
+        <dt>b</dt>
+        <dd>
+           second letter of the alphabet
+        </dd>
+    </d1>
+    <p> Here is a blockquote:</p>
+    <blockquote
+          cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+    <p> The <strong> HTML <code>&lt;blockquote&gt;</code>Element</strong>(or<em>HTML Block Quotation Element</em>) indicates that the enclosed text is an extended quotation</p></blockquote>
+    <p> The quote element —<code>&lt;q&gt;</code>—is <q cite = "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q"> intended for short quotations that don't require paragraph breaks. </q> </p> <!-- This is called an inline quotation -->
+    <!--the content of the cite attribute sounds useful but unfortunately browsers, screen readers, etc. dont really do much with it. There is no way to get the browser to display the contents of cite, without writing your own solution using JavaScript or CSS. If you want to make the source of the quotation available on the page you need to make it available in the text via a link or some other appropiate way. There is a <cite> element, but this is meant to contain the title of the resource being quoted, e.g. the name of the book. There is no reason, however, why you couldn't link the text inside the <cite> to the quote source in some way.-->
+    <p>for example</p>
+    <p>
+        According to the
+        <a href="/en-US/docs/Web/HTML/Element/blockquote">
+    <cite>MDN blockquote page</cite></a>:
+    </p>
+<blockquote
+  cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+  <p>
+    The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or
+    <em>HTML Block Quotation Element</em>) indicates that the enclosed text is
+    an extended quotation.
+  </p>
+</blockquote>
+<p>
+  The quote element — <code>&lt;q&gt;</code> — is
+  <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+    intended for short quotations that don't require paragraph breaks.
+  </q>
+  — <a href="/en-US/docs/Web/HTML/Element/q"><cite>MDN q page</cite></a>.
+</p>
+<!-- basically citations are styled in italic font by default -->
+<!-- abbreviations practice: -->
+    <p>I think <abbr title = "Reverend">Rev.</abbr> Green did it in the kitchen with the chainsaw. </p>
+    <p> We use <abbr>HTML</abbr>, Hypertext Markup Language, to structure our web documents </p>
+    <!-- earlier versions of html also included support for the <acronym> element but it was removed from the HTML spec in favor of using <abbr> to represent both abbreviations and acroynms. <acronym> should not be used -->
+    <!-- The element for marking up contact details in HTML is <address>, which wraps around your contact details. It could also include more complex markup, and other forms of contact information. For instance the following shows an example: --> 
+<address>
+  <p>
+    Chris Mills<br />
+    Manchester<br />
+    The Grim North<br />
+    UK
+  </p>
+
+  <ul>
+    <li>Tel: 01234 567 890</li>
+    <li>Email: me@grim-north.co.uk</li>
+  </ul>
+</address>
+
+    <!-- Note that something like the following would also be ok if the linked page contained the contact information -->
+<address>
+  Page written by <a href="../authors/chris-mills/">Chris Mills</a>.
+</address>
+    <!-- The <address> element should only be used to provide ocntact informaiton of tthe document contained wiht the nearest <article> or <body> element. It would be correct to use it in the footer of a site to include the contact information of the entire site, or inside an article for the contact details of the author, but not to mark up a list of addresses unrelated to the content of that page -->
+    <!-- The <sup> and <sub> elements handle the job of superscripts and subscripts -->
+     <!-- There are a number of elements avaialble for marking up computer code too using HTML -->
+    <!-- <code> is used for marking up gneeric pieces of computer code. <pre> is used for retaining whitespace, generally code blocks, if you use indentation or excess whitepsacef inside your text, browsers will ignore it and you will not see it on your rendered page. If you wrap the text in <pre></pre> tags howver, your whitespace will be rendered identically to how you see it in your text editor. <var> is used for specificall marking up variable names. <kbd> is used for marking up keyboard and other types of input entered into the computer. <samp> is used for marking up the output of a computer program. and etc.) -->
+    <!--The following are some examples of these elements in action and how they're used to represent computer code. -->
+    <p> Examples of computer program + computer program output mark ups: </p>
+	<pre><code>const para = document.querySelector('p');
+
+para.onclick = function() {
+  	    alert('Owww, stop poking me!');	
+	}</code></pre>
+
+	<p>
+  	You shouldn't use presentational elements like <code>&lt;font&gt;</code> and
+  	<code>&lt;center&gt;</code>.
+	</p>
+
+	<p>
+  	In the above JavaScript example, <var>para</var> represents a paragraph
+  	element.
+	</p>
+
+	<p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+
+	<pre>$ <kbd>ping mozilla.org</kbd>
+<samp>PING mozilla.org (63.245.215.20): 56 data bytes
+64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp>	</pre>
+    <p> -------------------------------------------------- </p>
+    <!-- HTML also provides the <time> element for marking up times and dates in a machine-readable format. This is useful because there are many different ways that humans write down dates. But not all of these forms can be easily recognized by computers. WHat if you wanted to automically grab the dates of all events in a page and isnert them into a calendar? The <time> element allows you to attach an unambigious, machine-readable time/date for this purpose. -->
+<p> Here are some examples of just some of the options of displaying a date/time using the <time> element in HTML that are machine readable: </p>
+<!-- Standard simple date -->
+<p><time datetime="2016-01-20">20 January 2016</time></p>
+<!-- Just year and month -->
+<p><time datetime="2016-01">January 2016</time></p>
+<!-- Just month and day -->
+<p><time datetime="01-20">20 January</time></p>
+<!-- Just time, hours and minutes -->
+<p><time datetime="19:30">19:30</time></p>
+<!-- You can do seconds and milliseconds too! -->
+<p><time datetime="19:30:01.856">19:30:01.856</time></p>
+<!-- Date and time -->
+<p><time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time></p>
+<!-- Date and time with timezone offset -->
+<p><time datetime="2016-01-20T19:30+01:00">
+  7.30pm, 20 January 2016 is 8.30pm in France
+</time></p>
+<!-- Calling out a specific week number -->
+<p><time datetime="2016-W04">The fourth week of 2016</time></p>
+
+    <p> -------------------------------------------------------- </p>
+    <!-- Most webpages contain a header, navigation bar, main content, side bar, and a footer -->
+    <!-- HTML provides dedicated tags that you can use to represent many of a webpage's different sections to implement when you're semnatically marking up your website so that you will use the right element structure and semantics for the right job for your webpage. These include <header>, <nav> for navigation bar, <main> for main content with various content subsections represented by <article>, <section>, <div> elements, <aside> for sidebar often placed inside <main> and <footer> for footer. -->
+<!--Understanding the overall meaning of all the HTML sectioning elements in detail is important and will be developed over time, but for now these definitions are important to know -->
+<!-- <main> is for content unique to this page. Use it only once per page and put it directly inside <body>. Ideally this shouldn't be nested within other elements. <article> encloses a block of related content that makes sense on its own without the rest of the page. <section> is similar to <article> but is more for grouping together a single part of the page that constitutes one single piece of functionality or a theme. It's considered best practice to begin each section with a heading and note that you can break <article>s up into different <section>s, or <section>s up into different <article>s depending on the context. <aside> contains content that is not directly related to the main content but can provide additional information indirectly related to it for eg glossary entries author biography related links etc.) <header> represents a group of introductory content. If it is a child of <body> it defines the global header of a webpage but if it's a child of an <article> or <section> it defines a specific header for that section (try not to confuse this with titles and headings). <nav> contains the main navigation functionality for the page. Secondary links for eg would not go into the navigation. <footer> represents a group of end content for a page -->
+<!-- Sometimes you can't find an ideal semantic element to group some items together or wrap some content. Sonetimes you might want to just group a set of elements together to affect them all as a single entity with some CSS Javascript. For cases like these, HTML provides the <div> and <span> elements. You should use these preferably with a suitable class attribute, to provide some kind of label for them so the can be easily targeted. <span>is an inline non semantic element, which you should only use if you cant think of a better semantic text element to wrap your content, or dont wan to add any specific meaning. -->
+<p>For instance:</p>
+<p>
+  The King walked drunkenly back to his room at 01:00, the beer doing nothing to
+  aid him as he staggered through the door.
+  <span class="editor-note">
+    [Editor's note: At this point in the play, the lights should be down low].
+  </span>
+</p>
+
+    <!-- in this case the editors note is supposed to merely provide extra direction for the director of the play; its not supposed to have extra semantic meaning. For sighted users, CSS would perhaps be used to distance the note slightly from the main text. On the other hand, <div> is a block level non-semantic element which you should only useif you can't think of a better semantic block element to use, or don't want to add any specific meaning. For example, imagine a shopping cart widget that you could choose to pull up any point during your time on an e-commerce site. The following lines of code show this example. -->
+<div class="shopping-cart">
+  <h2>Shopping cart</h2>
+  <ul>
+    <li>
+      <p>
+        <a href=""><strong>Silver earrings</strong></a>: $99.95.
+      </p>
+      <img src="../products/3333-0985/thumb.png" alt="Silver earrings" />
+    </li>
+    <li>…</li>
+  </ul>
+  <p>Total cost: $237.89</p>
+</div>
+    <p> -----------------------------------------------------------</p>
+    <!-- This isn't really an aside as it doesnt necessarily relate to the main content of the page (you want it viewable from anywhere.) It doesn't even particularly warrant using a <section> as it isn't part of the main content of the page. So a <div> is fine in this case. We've included a heading as a signpost to aid screen users in finding it. Divs are so convenient to use that it's easy to use them too much. As they carry no semantic value, they just clutter your HTML code. Take care to use them only when there is no better sematnic solution and try to reduce their usage to the minimum otherwise you'll have a hard time updating and maintaining your documents. -->
+    <!-- two elements that you'll use occasionally and will want to know about are line breaks and horizontal rules, br and hr. br creates a line break in a paragraph. it is the only way to force a rigid structure in a situaiton where you want a series of fixed short lines, such as in a postal address or a poem. Without the br elements, the paragraph would just be rendered in one long line, because as we said before html ignores most whitespace. On the other hand, hr elements create a horizontal rule in the document that denotes a thematic change in the text such as a change in topic or scene. Visually it just looks like a horizontal line. For eg:-->
+       <hr></hr>
+       <!--Once you've planned out the structure of a simple webpage the next logical step is to try to work out what content you want to put on a whole website, what pages you need, and how they should be arranged and link to one another for the best possible user experience. This is called INFORMATION ARCHITECTURE. In a large, complex website, a lot of planning can go into this process, but for a simple website of a few pages, this can be fairly simple, and fun! Bear in mind that you'll have a few elements common to most if not all pages such as the navigation menu adn the footer content. If your site is for a business, for example, it's a good idea to ahve your contact info available in the footer on each page. -->
+<p> Steps to information architecture 
+<ol>
+<li>Note down what you want to have in common to every page is thus the first step to information architecture.</li>
+<li> Next draw a rough sketch of what you might want the struture of each page to look like. Note what each block is going to be. </li>
+<li> now, brainstorm all the other not common to every page content you want to have on your website, write a big list down. </li>
+<li> Next try to sort all of these content items into groups, to give you an idea of what parts might live together on different pages. This is very similar to a technique called card sorting. </li>
+<li> Now try to sketch a rough sitemap -- have a bubble for each page on your site and draw lines to show the typical workflow between pages. The homepage will probably be in the center, and link to most if not all of the others; most of the pages in a small site should be available from the main navigation although there are exceptions. You might also want to include notes abotu how things might be presented. </li>
+</ol>
+</p>
+    <!-- HTML is not compiled into a different form before the browser parses it and shows the result (it is interepreted not compiled). And HTML's element syntax is arguably a lot easier to understand than a "real programming language" like Rust, JavaScript, or Python. The way that browsers parse HTML is a lot more permissive than how programming languages are run which is both a good and a bad thing. -->
+<!-- When you do something wrong in code therea are generally 2 main types of error that you'll come across. Syntax errors and Logic errors. HTML doesn't suffer from syntax errors because browsers parse it permissively, meaning that the page still displays even if there are syntax errors. Browsers have built-in rules to state how to interpret incorrectly written markup, so you'll get something erunning even if it is not what you expected. This, of course, can still be a problem! HTML is parsed permissively because when the web was first created, it was decided that allowing people to get their content published was more important than making sure the syntax was absolutely correct. The web would probably not be as popular as it is today, if it had been more strict from the very beginning. -->
+<p> You can use Markup Validation Service created and maintained by the W3C to debug your HTML code. Obviously not all of the error messages are so helpful but with a bit of practice you can work out how to interpret the error messages to fix your code. </p>
+    <!-- Multimedia and Embedding Images Section (Unit 2) -->
+    <!-- In order to put a single image on a web page, we use the <img> element, which is a void element (meaning it cannot have any child content and cannot have an end tag) that requires two attributes to be useful: src and alt. The src attribute contains a a URL pointing to the image you want to embed in the page. As with the href attribute for <a> elements, the src attribute can be a relative URL or an absolute URL. Without a src attribute, an img has no image to load. So for example, if your image is called dinosaur.jpg, and it sits in the same directory as your HTML page, you could embed the image like so:-->
+    <img src="dionsaur.jpg" alt = "Dinosaur"/>
+    <!--If the image was in an images subdirectory, which was inside the same directory as the HTML page, then you'd embed like this: -->
+    <img src = "images/dionsaur.jpg"alt = "Dinosaur"/>
+    <!-- and so on... Also, note that search engines also read imaage filenames and count them towards SEO, Search Engine Optimization. Therefore you should give your image a descriptive filename; dinosaur.jpg is better than img835.png
+    You could also embed the image using its absolute URL.
+    
+    Linking via absolute URLs is not recommended, however. You should host the images you want to use on your site,which ins imple setups means keeping the images for your website on the same server as your HTML. In addition, it is more efficient to use relative URLs than absolute URLs in terms of maintenance (when you move your site to a differnet domain, you won't need to update all your URLs to include the new domain). You could also use a CDN, content delivery network to deliver your images.
+
+If you did not create the images, you should make sure you have the permission to use them under the conditions of the license they are published under. Never point the src attribute at an image hosted on soemone else's  website without permission. This is called hotlinking, and is considered unethical, since someone else would be paying the bandwidth costs for delviering the image when someone visits your page. It also leavs you with no control over the image being removed or replaced with something embarassing.
+
+Elements like <img> and <video> are sometimes referred to as replaced elements. This is because the elemnt's content and size are defined by an external sourcfe (like an image or video file) not by the contnets of the element itself. 
+
+Alternative text: Aside from the src attribute, the alt attribute is also important. Its value is supposed to be a textual description of the image, for use in situations where the image cannot be seen/displayed or takes a long time to render because of a slow internet connection. 
+
+The easiest way to test your alt text is to purposely misspell your filename. If for example our image name was spelled dinosoooooor.jpg, the browser wouldn't display the image and would display the alt text instead. So why would you ever see or need alt text? It can come in handy for a number of reasons. The user is visually impaired, and is using a screen reader to read the web out to them. In fact having alt text available to describe images i useful to most users. Also, spelling of the file or path name might be wrong. The browser doesn't support the image type. You might want to provide text for search engines to utilize. Users have turned off images to reduce data transfer volume and distractions. This is especially common on mobile phones and in countries where bandwidth is limtied or expensive.
+
+What exactly should you write inside your alt attribute? It depends on why the image is there in the first place. In other words, what you lose if your image doesn't show up. 
+Decoration. You could use CSS background iamges for decorative images, but if you must use HTML, add a blank alt= "". If the image isn't part of the content, a screen reader shouldn't waste time reading it. 
+Content. If your image provides significant information, provide the same information in a brief alt text - or even better the main text which everybody can see. Don't redundant alt text. How annoying would it be for a sighted user if all paragraphs were written twice in the main content? If the image is described adequately by the main text body, you can just use alt = "".
+Link. If you put an image inside <a> tags, to turn an image into a link, you must provide accessible link text. In such cases you may either write it inside the same a element or inside the image's alt attribute whichever works best in your case. 
+Text. You should not put your text into images. If your main heading needs a dro pshadow, for example, use CSS for that rather than putting the text into an image. However, if you really can't avoid doing this you should supply the text inside the alt attribute.
+
+Essentially, the key is to deliiver a USBALE EPXPERIENCE EVEN WHEN THE IMAGES CANT BE SEEN. This ensures all users are not missing any of the content. Try turning off images in your browser and see how things look. You'll soon realize how helpful alt text is if the image cannot be seen. 
+
+Width and heigth attributes are goofy ahh too. They are given as integers without a unit and represent the image's with and height in pixels. You can find the image's wifth and height in a number of ways, for exmaple on the mac you use you can use command and I to get the display information for the image file. 
+
+Theres a really good reason to use width and height attributes. The HTML for your page and the image are separate resources, fetched by the browser as separate HTTPS requests. As soon as the browser has received the HTML, it will start to display it to the user. If the images haven't yet been received and this will often be the case, as image file sizes are often muhc larger than HTML files, then the browser will only render the HTML, and will update ht page with the image as soon as it is received. Essentially as soon as the browser downloads the HTML, the browser will start to display the page. Once the image is loaded, the browser adds the image to the page. Because the image takes up spae, the browser has to move the text down the page to fit the image above it. Moving the text like this is extremely distracting to users especially if they have already started to read it.
+
+If you specfiy the actual size of the image in your HTML, using the width and the height attributes, then the browser knows before it has downloaded the image, how much space it has to allow for it. This means that when teh image has been downloaded the browser doesn't have to move the surrounding content. 
+
+Although as we have said it is good practice to specify the image of your images using HTMl attributes, you should not use them to resize images. If you set the image size too big you'll end up with images that look grainy, fuzzy, or too small, and wasting bandwidth downloading an image that is not fitting the user's needs. The image may also end up looking distorted if you don't maintain the correct aspect ratio. You should use na image editor to put your image at the correct size before putting it on your webpage. If you do need to later an image's size you should use CSS instead.
+
+As with links, you can also add title attributes to images to provide further supporting information if needed. However, this is not recommended as the title has a number of accessibility problems, mainly based around the fact that screen reader support is very unpredictable and most browsers won't show it unless you are hovering with a mouse. It is better to include such supporting information in the main article text, rather than attached to the image. 
+-->
+    <!--There are a number of ways that you could add a caption to go with your image. For eg, the more common way:-->
+    <div class="figure">
+  <img
+    src="images/dinosaur.jpg"
+    alt="The head and torso of a dinosaur skeleton;
+            it has a large head with long sharp teeth"
+    width="400"
+    height="341" />
+
+  <p>A T-Rex on display in the Manchester University Museum.</p>
+</div>
+    <!-- This is ok it contains the content you need and is nicely stylable using CSS. But there is a problem here: there is nothing that semantically links the image to its caption, which can cause problems for screen readers. For example when you have 50 images and caption which caption goes with which image? A better solution is to use the
+HTML figure and figcaption elements. These are created for exactly this purpose: to provide a semantic container for figures and to clearly link the figure to the caption. For example: -->
+
+<figure>
+  <img
+    src="images/dinosaur.jpg"
+    alt="The head and torso of a dinosaur skeleton;
+            it has a large head with long sharp teeth"
+    width="400"
+    height="341" />
+
+  <figcaption>
+    A T-Rex on display in the Manchester University Museum.
+  </figcaption>
+</figure>
+
+<!-- From an accessibility viewpoint captions and alt text have distinct roles. Captions benefit even people who can see the image, whereas alt text provides the same functionality as an absent image. Therefore, cpations and alt text shouldn't just say the same thing, because they both appear when the image is gone. Try turning the images off in your browser and see how it looks -->
+
+<!-- A figure doesn't have to be an image, it is an independent unit of contne thtat expresses your meaning in a compact easy to grasp way, could go in several places in the page's linear flow, provides essential information supporting the main text, etc.) It could be several images, a code snippet, audio, video, equations, a table, or something else -->
+    
+<!-- You can also use CSS and javascript to embed images into webpages. The CSS background-image property and the other background-* properties, are used to control background image placement. For example, to place a background image on every paragraph on a page, you could do this: p{background-image: url("images/dinosaur.jpg");} The resulting embedded image is arguably easier to position and control than HTML images, so why bother with HTMl iamges? As hinted above, CSS background images are for decoration only. If you just want to add something pretty for your page to enhance the visuals that is fine. Though such images have no semantic meaning at all. They can't hae any text equivalents are invisible to sreen readers and so on. This is where HTML images shine! 
+
+Summing up, if an image has meaning in terms of your content you should use an HTML image. If an image is purely decoration you should use CSS background images. -->
+<!-- We've seen that static images can be displayed using img element or by setting the background if HTML elements using the background-image property. You can also construct graphics on teh fly or manipulate images after the fact. The browser offers ways of creating 2d and 3d graphics with code as well as including videos from uploaded files or live streamed from a user's camera. Here are links to articles that provide insight these more advanced graphics topics that cover canvas, svg, webgl, html audio and video, webrtc elements. Also go to https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML for more info on a bunch of licenses and copy right information regarding using images and different types of figures -->
+
+<!-- Now we will be discussing video and audio content -->
+<!-- Now that we are comfortable with adding simple images to a webpage, the next step is to start adding video and audio players to your HTML documents! In this article we'll look at doing just that with the <video> and <audio> elements; we'll then finish off by looking at how to add captions/subtitles to your videos -->
+<!-- The first influx of online videos and audio were made possible by proprietary plugin-based technologies like Flash and Silverlight. Both of these had security and accessibility issues and are now obsolete, in favor of native HTML solutions <video> and <audio> elements and the availability of JavaScript APIs for controlling them. We'll not be looking at JavaScript here, just the basic foundations that can be achieved with HTML.
+
+We won't be teaching you how to produce audio and video files, that requires a completely different skill set. Instead we will use provided sample audio and video files and example code for experimentation.
+
+Prior to beginning, it's important to know that there are quite a few OVPs (online video providers) like YouTube, Dailymotion, Vimeo and online audio providers like Soundclouds. Such companies offer a convenient easy way to host and consume videos so you don't have to worry about the enormous bandwidth consumption. OVPs even usually offer ready-made code for embedding video/audio in your webpages; if you use that route, you can avoid soem of the difficulties that we will discuss later. 
+
+The <video> element allows you to embed a video very easily. A simple example is shown below -->
+<video src="rabbit320.mov" controls>
+  <p>
+    Your browser doesn't support HTML video. Here is a
+    <a href="rabbit320.mov">link to the video</a> instead.
+  </p>
+</video> <!-- Note that the video must be downloaded on your device for this one!! -->
+<!-- Note the features: src, similar for that of the img element, the src attribute contains a path to the video you want to embed. controls, users must be able to control vidoe and audio playback (it's especially critical for people who have epilepsy) you must either use the cotnrols attribute to include the browser's own control interface, or build your interface using the appropiate JavaScript API. At a minimum the interface must include a way to start and stop the media, and to adjust the volume. The paragraph inside the video tags is called fallback content, thsi will be displayed if the browser accessing the page doesn't support the video allowing us to provide a fallback for older browsers. This can be anything you like; in this case, we've provided a direct link to the vidoe file, so the user can at least access it in some way regaradless of what browser they are using. -->
+<!-- There is a problem with the above example. It is possible that the video might not play for you because different browsers support different video and audio formats. Fortunately there are things you can do to help prevent this from being an issue. First let's go through the terminology quickly. Fromats like mp3, mp4, and webm are called container formats. They define a structure in which the audio and/or video tracks that make up the media are stored, along with metadata describing the media and what codecs are used to encode its channels and so forth.
+
+The audio and video tracks within the container hold data in the appropiate format for the codec used to encode that media. Different formats are used for audio tracks versus video tracks. Each audio track is encoded using an audio codec while video tracks are encoded using a video codec. As we talked about before different browsers support different video and audio formats and different container formats like mp3 mp4 and webm which in turn can contain different types of audio and video. 
+
+For example: 
+A webm container typically packages vorbis or opus audio with vp8/vp9 video. This is supported in all modern browsers though older versions may not work.
+An mp4 container often packages aac or mp3 audio with h.264 video. This is supported in all modern browsers too.
+The Ogg video tends to use Vorbis audio and Theora Video. This is best supported in Firefox and Chrome but has basically been superseded by the bettery quality WebM format.
+
+There are some special cases. For example, for some types of audio, a codec's data is often stored without a container, or with a simplified container. One such instance is the FLAC codec which is stored most commonly in FLAC files which are just raw FLAC tracks.
+
+Another such situation is the always popular MP3 file. An mp3 file is actually an mpeg-1 audio layer 3audio track stored within an mpeg or mpeg-2 container. This is especially itneresting since while most browsers dont support sing mpeg media in the video and audio elements they may still support mp3 due to its popularity.
+
+An audio player will tend to play an audio track directly eg an mp3 or ogg file. These don't containers. 
+
+Several popular formats such as mp3 and mp4/h.264 are excellent but encumbered by patents; that is, there are patents covering some or all of the technology that they're based upon. IN the usa, patents covered mp3 until 2017 and h.264 is encumbered by patents through at least 2027. Because of those patents, browsers that wish to implement support for those codecs must pay typically enormous license fees. In addition, some people prefer to avoid restricted software an dprefer to use only open formats. Due to these legal and preferential reasons, web developers find themselves havign to support multiple formats to capture their entire audience.
+
+The codecs described in the previous section exist to compress video and audio into manageable files since raw audio and video are both exceedingly large. Each web browser supports an assortment of codecs, like Vorbis or H.264, which are used to convert the compressed audio and vidoe into binary data and back. Each codec offers its own advantages and drawbacks, and each container may also offer its own positive and negative features affecting your decisions about which to use. Things become slightly more complicated because not only does each browser support a different set of container file formats they also each support a different selection of codecs. In order to maximize the likelihood that your website or app will work on a user's browser, you may need to provide each media file you use in multiple formats. If your site and the user's browser don't share a media format in common your media won't play.
+Due to the intricacices of ensuring your app's media is viewable across every combination of browsers, platforms, and devices you wish to reach, choosing the best combination of codecs and container can be a complicated task. See https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content for tips on how to choose the right codec and container to use for your content and your target audience. One additional thing to keep in mind: mobile browsers may support additional formats not supported by their desktop equivalents just like they may not support all the same formats the desktop version does. On top of that both desktop and mobile browsers may be designed to offload handling of media playback (either for all media or only for specific types it can't handle internally.) This means media support is partyly dependent on what software the user has installed. 
+So how do we do this? -->
+<video controls>
+  <source src="rabbit320.mp4" type="video/mp4" />
+  <source src="rabbit320.webm" type="video/webm" />
+  <p>
+    Your browser doesn't support this video. Here is a
+    <a href="rabbit320.mp4">link to the video</a> instead.
+  </p>
+</video>
+<!-- Here we've taken teh src attribute out of the actual video tag and instead included separate source elements that point to their own sources. In this case the browser will go through the source elemnts and play the first oen that it has the codec to support. Including WebM and MP4 sources should be enough to play your video on most platforms and browsers these days.
+Each source element also has a type attribute. THis is optional but it is advised tha tyou include it. The type attribute contains the MIME type of the file specificed byt he source and browsers can use the type to immediately skip videos they don't understand. If type isn't included browsers will load and try to play each file until they find one that works, which obviously takes time and is an unnecessary use of resources.
+
+There are a number of other features you can include when displaying an HTML video. These include and are not limited to the following list -->
+<video
+  controls
+  width="400"
+  height="400"
+  autoplay
+  loop
+  muted
+  preload="auto"
+  poster="poster.png">
+  <source src="rabbit320.mp4" type="video/mp4" />
+  <source src="rabbit320.webm" type="video/webm" />
+  <p>
+    Your browser doesn't support this video. Here is a
+    <a href="rabbit320.mp4">link to the video</a> instead.
+  </p>
+</video>
+<!-- The width and height features are what you cna use to control the video size either with these attributes or with CSS. In both cases videos maintain their native width height ratio known as the aspect ratio. If the aspect ratio is not maintained by the sizes you set the video will grow to fill the space horizontally and the unfilled space will just be given a solid background color by default.
+
+Autoplay makes the audio/video start playing right away, while the rest of the page is loading. You are advised to not use autoplaying video or audio on your sites because users can find it really annoying.
+
+loop makes the video or audio start playing again whenever it finishes. this can be also annoying so only use if really necessary.
+
+muted causes the media to play wiht the sound turned off by default
+
+poster. the url of an image which will be displayed before the video is played. it is intended to be used for a splash screen or advertising screen.
+
+preload is used for buffering large files. it can take one of three values, none which doesn't buffer the file, auto whihc buffers the media file, and metadata buffers only the metadata for the file. 
+
+note that if you autoplay attribute you cant see the poster </3333
+
+The audio element works just like the video element with a few small difference as outlined below. For example: -->
+
+<audio controls>
+  <source src="viper.mp3" type="audio/mp3" />
+  <source src="viper.ogg" type="audio/ogg" />
+  <p>
+    Your browser doesn't support this audio file. Here is a
+    <a href="viper.mp3">link to the audio</a> instead.
+  </p>
+</audio>
+
+<!-- This takes up less space than a video player as there is no visual component and you only just need to display controls to play the audio. Other differences from HTMl videos are as follows: the audio element doesn't support the width height attributes,  again no visual component so nothing to assign a width or height to, and it also doesn't support the poster attribute because again no visual component.
+
+Other than this, audio supports all the same features as video.
+
+Now we will discuss a slightly more advanced concept that is really useful to know about. Many people can't or don't want to hear the audio/video content they find on the website at least at certian times. 
+
+For eg:
+Many people have auditory impairments such as being hard of hearing or deaf so they cant hear the audio clearly if at all.
+Others may not be able to hear the aduio because they are in noisy environments.
+Etc etc you get the point.
+Thus wouldn't it be nice to be able to provide these people with a transcript of the words being spoken in the audio/video? Well thanks to HTML video you can. To do so we use the WebVTT file format and the track element. Note that transcribe means to write down spoken words as text. The resulting text is a transcript.
+
+WebVTT is a format for writing text files containing multiple strings of text along with metadata such as the time in the video at which each text string should be displayed and even limited styling positioning information. These text strings are called cues, and there are several kinds of cues which are used for different purposes. The most common cues are subtitles (translations of foreign material for people who dont understand the words spoken in the audio), captions(synchronized transcriptions of dialog or descriptions of significant sounds, to let people who can't hear the audio understand what is going on), and timed descriptions (text which should be spoken by the media player in order to describe important visuals to blind or otherwise visually impaired users.) -->
+<p>
+
+A typical WebVTT file will look something like this: 
+WEBVTT
+
+1
+00:00:22.230 --> 00:00:24.606
+This is the first subtitle.
+
+2
+00:00:30.739 --> 00:00:34.074
+This is the second.
+
+…
+</p>
+<!--
+To get this displayed along with HTML media you need to save it as a .vtt file somewhere the server can serve, sch as in teh same directory as the HTML file. You also need to link the .vtt file with the track element. track should be placed within audio or video but after ALL source elements. Use the kind attribute to specify whether the cues are subtitles, captions, or descriptions. Further, use srclang to tell the browser what language you have written the subtitles in. Finally, add label to help readers identify the language they are searching for. The following is an example: -->
+
+<video controls>
+  <source src="example.mp4" type="video/mp4" />
+  <source src="example.webm" type="video/webm" />
+  <track kind="subtitles" src="subtitles_es.vtt" srclang="es" label="Spanish" />
+</video>
+<!-- In order to try this you need to host the files on a local http server. In the output in browser you'll see a video that has subtitltes displayed.
+
+Visit the last link I linked for more details on how to add labels. You can also find on this site an example that uses some javascript to allow users choose between different subtitles. Note that to turn the subtitles on you need to press the CC button and select an option. 
+
+Text tracks also help you with SEO, search engine optimization, since search engines especially thrive on text. Text tracks even allow search engines to link direclty to a spot partway through the video. -->
+
+    <p> Active Learning Assignment: Embedding your own audio and video </p>
+    <p>
+    <audio controls
+     title = "Good Day by IU">
+     <source src = "GoodDay.mp3" type ="audio/mp3"/>
+    </audio>
+       </p>
+    <video controls poster ="IU.jpg">
+        <source src ="Celebrity.mp4" type ="video/mp4">
+        <p> Your browser doesn't support this audio file. Here is a
+    <a href="Celebrity.mp4">link to the video</a> instead. </p>
+        <track kind ="subtitles" src ="subtitles_en.vtt" srclang ="en" label ="English"/>
+    </video>
+
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+  
+  </body>
+</html>
